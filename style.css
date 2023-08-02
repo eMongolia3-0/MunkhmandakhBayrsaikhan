@@ -1,0 +1,445 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Helvetica;
+    text-decoration: none;
+  }
+  a{
+    color: #5c739f;
+  }
+  body {
+    background-color: #f4f4fb;
+  }
+  
+  header {
+    width: 100%;
+    height: 54px;
+    background: #fefeff;
+    padding: 10px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* margin-bottom: 130px; */
+  }
+  
+  header img {
+    width: 35%;
+    margin-left: 5px;
+  }
+  .name {
+    width: 38%;
+    height: 40px;
+    background-color: #024ddb;
+    border-radius: 4px;
+    color: white;
+    display: flex;
+    padding: 3px;
+    margin: auto;
+    margin-top: -4.5px;
+    padding: auto;
+  }
+  .name h6 {
+    color: #7eb0fb;
+  }
+  .bar {
+    width: 8%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .bar{
+    justify-content: center;
+  }
+  .line {
+    width: 70%;
+    height: 3px;
+    background-color: #024ddb;
+  }
+  .lines{
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+.bar .line .test-1{
+  position: absolute;
+  width: 500px;
+  margin-right: 0;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.534);
+  z-index: 777;
+  visibility: hidden;
+  opacity: 0;
+}
+.bar .line .menu{
+  position: absolute;
+  width: 320px;
+  height: 98vh;
+  right: 0;
+  top: 0;
+  visibility: hidden;
+  opacity: 0;
+  background-color: white;
+  z-index: 999;
+
+}
+.bar:hover .test-1{
+  opacity: 1;
+  visibility: visible;
+  cursor: pointer;
+  transition: .3s;
+}
+.bar:hover .menu{
+  opacity: 1;
+  visibility: visible;
+  cursor: pointer;
+  transition: .3s;
+}
+.bar .line .menu .menu-profile-1{
+  width: 100%;
+  height: 18.5%;
+}
+.bar .line .menu .menu-profile-1 .profile-div{
+  width: 130px;
+  height: 130px;
+  position: relative;
+  top: 15px;
+  left: 30px;
+  border-radius: 50%;
+  outline: solid 4px #377dff;
+  background-image: url(./picture/WBG\ copy.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.bar .line .menu .menu-profile-1 .profile-div .profile-div-2{
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: #dfeafa;
+  right: -4px;
+  bottom: -4px;
+  border-radius: 50%;
+  background-image: url(./picture/emongolia-logo.jpeg);
+  background-size: contain;
+  
+}
+.bar .line .menu .menu-profile-2{
+  width: 100%;
+  height: 10%;
+}
+.bar .line .menu .menu-profile-2 .menu-name{
+  width: 100%;
+  height: 60%;
+}
+.bar .line .menu .menu-profile-2 .menu-name p{
+  font-size: 25px;
+  color: #377dff;
+  padding: 21px 0 0 20px;
+}
+.bar .line .menu .menu-profile-2 .menu-gmail{
+  width: 100%;
+  height: 40%;
+}
+.bar .line .menu .menu-profile-2 .menu-gmail p{
+  font-size: 15px;
+  padding: 2px 0 0 20px;
+  color: #5c739f!important
+}
+.bar .line .menu .menu-profile-3{
+  width: 100%;
+  height: 25%;
+  display: grid;
+  grid-template-columns: 100%, 1;
+  grid-template-rows:  25%, 4;
+}
+.bar .line .menu .menu-profile-3 p{
+  font-size: 18px;
+  padding: 10px 0 0 20px;
+}
+.bar .line .menu .menu-profile-3 .menu-bar{
+
+  margin-top: 1px;
+}
+.bar .line .menu .menu-profile-3 .menu-bar p{
+  color: #5c739f!important
+}
+.bar .line .menu .menu-hr{
+  width: 85%;
+  outline: none;
+  border: none;
+  height: 1px;
+  margin: 18px 0 25px 22px;
+  background-color: #5c739f!important
+}
+.bar .line .menu .menu-profile-4{
+  width: 100%;
+  height: 41%;
+  display: grid;
+  grid-template-columns: 100% ,1;
+  grid-template-rows: 16.5% ,6;
+}
+.bar .line .menu .menu-profile-4 .menu-bars{
+  margin-top: 1px;
+  display: flex;
+  color: #5c739f!important
+}
+.bar .line .menu .menu-profile-4 .menu-bars .bars-icon{
+  width: 60px;
+  height: 100%;
+  margin: 0 0 0 10px;
+  display: flex;
+  justify-content: center;
+
+}
+.bar .line .menu .menu-profile-4 .menu-bars .bars-icon i{
+  font-size: 20px;
+}
+.bar .line .menu .menu-profile-4 .menu-bars .bars-text{
+  width: 75%;
+  height: 100%;
+}
+.bar .line .menu .menu-profile-4 .menu-bars .bars-text p{
+  font-size: 18px;
+}
+.b
+ 
+  .down {
+    width: 14px;
+    margin-left: -10px;
+    margin-top: 10px;
+  }
+  .centerrr {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px 8px;
+  }
+  .secondHeader {
+    height: 82px;
+    width: 100%;
+    background-color: white;
+    margin-top: 60px;
+    padding: 16px 8px;
+  }
+  .nuur {
+    color: grey;
+    font-size: 14px;
+  }
+  .nuur span {
+    color: rgba(0, 0, 255, 0.76);
+  }
+  .tavtai {
+    margin-top: 6px;
+    font-size: 20px;
+    color: #1c518a;
+  }
+  .tavtai span {
+    font-size: 20px;
+    margin-left: 14px;
+    font-weight: bold;
+    color: #16375a;
+  }
+  .thirdHeader {
+    width: 80%;
+    padding: 0;
+    margin-bottom: 1px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    color: #5972aa;
+    
+  }
+  
+  .thirdHeader span {
+    color: #2d66e0;
+  }
+  .almost-link{
+    width: 100%;
+    height: 2px;
+    margin-bottom: 15px;
+  }
+  .almost-link .link-div{
+    width: 34%;
+    height: 100%;
+    background-color: red;
+    margin-left: 41%;
+  }
+  #trash{
+      text-decoration: none;
+  }
+  .private {
+    margin: auto;
+    width: 95%;
+    height: auto;
+    background-color: white;
+  }
+  .privateHeader {
+    padding: 8px 20px;
+    height: 48px;
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.185);
+    display: flex;
+    align-items: center;
+  }
+  .privateImage {
+    width: 95%;
+    height: 50%;
+    margin-left: 2.5%;
+    /* background-color: rebeccapurple; */
+  }
+  .privateImage img {
+    width: 100%;
+    height: 100%;
+  }
+  .About {
+    padding: 16px 20px;
+  }
+  .aboutHeader {
+    font-size: 20px;
+  }
+  .tables {
+    width: 100%;
+  }
+  .table {
+    margin-top: 16px;
+    padding: 8px 12px;
+    display: flex;
+    justify-content: space-between;
+    color: #024ddb;
+  }
+  .blue {
+    background-color: #dfeafa;
+  }
+  .white {
+    background-color: #eef3fa;
+  }
+  .table span {
+    color: black;
+  }
+  .information{
+      width: 100%;
+      height: 30vh;
+  }
+  .information .first{
+      width: 100%;
+      height: 100%;
+  }
+  .first .info{
+      height: 20%;
+      width: 100%;
+  }
+  .first .info .p{
+      font-size: 17px;
+      padding-top: 15px;
+      padding-left: 10px;
+  }
+  .first .medehgui2{
+      height: 25%;
+      width: 100%;
+      display: flex;
+  }
+  .medehgui2 .icon-sha{
+      width: 15%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .medehgui2 .icon-sha i{
+      color: black;
+      font-size: 23px;
+  }
+  .medehgui2 .text-sha{
+      width: 85%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+  }
+  .medehgui2 .text-sha p{
+      color: black;
+      font-weight: 100;
+  }
+  .medehgui2 .text-sha p:hover{
+    color: #2d66e0;
+    transition: .3s;
+    cursor: pointer;
+  }
+  hr{
+      margin-top: 2px;
+  }
+  
+
+
+  .medehgui2 .text-shaa{
+    width: 85%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+.medehgui2 .text-shaa p{
+    color: black;
+    font-weight: 100;
+}
+.medehgui2 .text-shaa p:hover{
+  color: #2d66e0;
+  transition: .3s;
+  cursor: pointer;
+}
+
+
+.first .infoo p{
+
+ height: 20%;
+  width: 100%;
+  margin-top: 55px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+
+.end{
+  width: 100%;
+  height: 10vh;
+
+  display: flex;
+  margin-top: 15px;
+}
+.end .end-logo{
+  width: 55%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.end .end-logo img{
+  width: 90%;
+  height: 90%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.end .end-icon{
+  width: 45%;
+  height: 100%;
+
+  display: flex;
+
+}
+.end .end-icon .icons{
+  width: 25%;
+  height: 100%;
+
+  margin-left: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.end .end-icon .icons i{
+    font-size: 20px;
+    color: rgba(0,36,102,.62);
+}
